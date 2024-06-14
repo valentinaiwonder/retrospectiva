@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    font-family: "Paytone One", sans-serif;
+}
+:root {
+    --branco: #ffffff;
+    --roxoescuro: rgb(47, 6, 47);
+    --roxomedio: rgb(121, 24, 121);
+    --roxoclaro: rgb(180, 22, 180);
+    --roxosuperclaro: rgb(255, 159, 255);
+    --preto: black;
+    --cinza: rgb(171, 171, 171);
+
+}
+
+.d-flex {
+    display:flex;
+}
+
+.j-between{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itens-center{
+    align-items: center;
+}
+.g-small{
+    gap: 18px;
+}
+/* Header */
+header {
+    padding: 30px;
+    color:var(--roxoescuro);
+}
+
+/* letras padrão */
+.principal {
+    color: var(--branco);
+    font-size: larger;
+    font-size: 40px;
+    font-weight: 500;
+}
+.principal2 {
+    color: var(--roxosuperclaro);
+}
