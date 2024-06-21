@@ -4,7 +4,9 @@
     text-decoration: none;
     box-sizing: border-box;
     transition: all 0.3s;
-    font-family: "Paytone One", sans-serif;
+    font-family: "Sora", sans-serif;
+    font-weight:none;
+    font-weight: 500;
 }
 :root {
     --branco: #ffffff;
@@ -20,17 +22,27 @@
    background-color: var(--roxomedio);
 }
 .bg-fundo {
-    background-image: url(../img/fundo.jpg);
+    background-image: url(../img/biologia.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
-    background-position: bottom center;
+    background-position: bottom left;
     width: 100%;
     height: 130vh;
 }
 .tamanhoimag{
     width: 700px;
     height:400px;
+    transition: transform 0.2s;
 }
+.tamanhoimag:hover {
+    animation: jump 0.5s ease;
+}
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
 .roxosuperclar {
     --roxosuperclaro: rgb(255, 159, 255);
 }
@@ -53,19 +65,46 @@ header {
 
     color:var(--roxoescuro);
 }
+.branco {
+    color: black;
+}
 
+.bio {
+
+    margin-top: 300px;
+    margin-bottom: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-weight:1000;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    border-radius: 3%;
+}
+
+.bio p, 
+.bio h1 {
+    font-family: "Varela Round", sans-serif;
+} 
+.bounce {
+    padding: 20px 40px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bounce:hover {
+    transform: translateY(-10px);
+}
 /* letras padrão */
 .principal {
     color: var(--branco);
-    font-size: larger;
+    font-weight: 10;
 }
 .principal2 {
     color: var(--roxosuperclaro);
 }
-.redes {
-    height: 5px;
-    width:5px;
-}
+
 
 .redessociais {
     display: flex;
@@ -80,7 +119,7 @@ header {
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    height: 10vh;
+    height: 5vh;
     gap:20px;
     padding-top: 20%;
 }
@@ -93,24 +132,59 @@ header {
         gap: 10px;
         background-color: var(--roxoescuro);
     }
+.container {
+        column-count: 2;
+        column-gap: 20px;
+        transition: transform 0.3s ease-in-out;
+}
+.container:hover {
 
+}
 .botao{
     font-size: 20px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 200;
     height:40px;
     padding: 5px;
     border-radius: 8px;
-    background-color: rgb(0, 0, 0);
-    color: var(--roxomedio);
+    background-color: rgb(246, 168, 202);
     display: flex;
     justify-content: center;
     justify-content: space-around;
     gap:20px;
 }
 
+.bolinha {
+    width: 200px; /* Tamanho da bolinha */
+    height: 200px; /* Tamanho da bolinha */
+    border-radius: 50%; /* Faz a imagem ficar circular */
+    object-fit: cover; 
+    padding-top: 20px; 
+}
+.bolinha:hover {
+    animation: jump 0.5s ease;
+}
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
 
 .botaocontato{
-    background-color: var(--white);
-    color: var(--black);
+    background-color: ;
     }
+.botao:hover {
+    background: rgb(212, 104, 151);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+footer { 
+color: #FFF;
+text-align: center;
+padding: 10px 0;
+position: fixed;
+bottom: 0;
+width: 100%;
+background: radial-gradient(circle, rgb(157, 63, 251) 0%, rgb(21, 11, 38) 100%);
+}
+
